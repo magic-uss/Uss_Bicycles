@@ -1,0 +1,55 @@
+/* open-sans-regular */
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    local("Open Sans Regular"),
+    local("OpenSans"),
+    local("OpenSansRegular"),
+    url("../fonts/open-sans-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/open-sans-v20-latin_cyrillic-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* open-sans-300 */
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    local("Open Sans Light"),
+    local("OpenSans"),
+    local("OpenSansLight"),
+    url("../fonts/open-sans-v20-latin_cyrillic-300.woff2") format("woff2"),
+    url("../fonts/open-sans-v20-latin_cyrillic-300.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* open-sans-600 */
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    local("Open Sans Semi-bold"),
+    local("OpenSans"),
+    local("OpenSansSemiBold"),
+    url("../fonts/open-sans-v20-latin_cyrillic-600.woff2") format("woff2"),
+    url("../fonts/open-sans-v20-latin_cyrillic-600.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* open-sans-700 */
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    local("Open Sans Bold"),
+    local("OpenSans"),
+    local("OpenSansBold"),
+    url("../fonts/open-sans-v20-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/open-sans-v20-latin_cyrillic-700.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

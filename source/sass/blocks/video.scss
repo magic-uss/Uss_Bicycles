@@ -1,0 +1,147 @@
+.video {
+  min-height: 896px;
+
+  @media (max-width: $tablet) {
+    min-height: 509px;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 444px;
+  }
+}
+
+.video__inner {
+  position: relative;
+  min-height: 706px;
+  padding-top: 121px;
+  background-color: $dark;
+
+  @media (max-width: $tablet) {
+    min-height: 413px;
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 384px;
+    padding-top: 84px;
+  }
+}
+
+.video__inner h2 {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+
+  @media (max-width: $tablet) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 10px;
+  }
+}
+
+.video__inner p {
+  max-width: 350px;
+  margin: 0 auto 56px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+  opacity: 0.7;
+
+  @media (max-width: $tablet) {
+    max-width: 420px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 53px;
+    padding: 0 10px;
+  }
+}
+
+.video__wrapper {
+  position: absolute;
+  bottom: -98px;
+  left: calc(50% - 464px);
+  width: 929px;
+  height: 522px;
+  background: url("../img/video-desktop.jpg") 50% 0 no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet) {
+    bottom: -85px;
+    left: calc(50% - 251px);
+    width: 503px;
+    height: 282px;
+    background-image: url("../img/video-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile) {
+    bottom: -49px;
+    left: calc(50% - 145px);
+    width: 288px;
+    height: 162px;
+    background-image: url("../img/video-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-mobile@2x.jpg");
+    }
+  }
+}
+
+.video__button {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 33px);
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  background-color: $cyan;
+  background-image: url("../../img/play-icon.svg");
+  background-position: 54% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: $tablet) {
+    top: calc(50% - 45px);
+    left: calc(50% - 46px);
+    width: 91px;
+    height: 91px;
+    background-size: 18px 25px;
+  }
+
+  @media (max-width: $mobile) {
+    top: calc(50% - 33px);
+    left: calc(50% - 32px);
+    width: 65px;
+    height: 65px;
+    background-size: auto;
+  }
+}
