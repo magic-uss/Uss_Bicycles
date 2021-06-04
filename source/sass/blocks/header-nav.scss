@@ -84,11 +84,6 @@
     border: none;
     cursor: pointer;
   }
-
-  &:focus,
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .header-nav--closed .header-nav__toggle {
@@ -103,9 +98,7 @@
     box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover {
     &::before {
       background-color: $white;
       box-shadow: 0 6px 0 0 $white, 0 12px 0 0 $white;
@@ -126,9 +119,7 @@
     background: url("../img/close-icon.svg") 0 0 no-repeat;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover {
     &::before {
       opacity: 0.6;
     }
@@ -142,7 +133,6 @@
     right: 0;
     z-index: 10;
     width: 100%;
-    max-width: 320px;
     height: 100%;
     background-color: $white;
     overflow-y: scroll;

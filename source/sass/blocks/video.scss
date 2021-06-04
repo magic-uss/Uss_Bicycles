@@ -73,8 +73,7 @@
   left: calc(50% - 464px);
   width: 929px;
   height: 522px;
-  background: url("../img/video-desktop.jpg") 50% 0 no-repeat;
-  background-size: cover;
+  background: url("../img/video-desktop.jpg") 50% 0 / cover no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-desktop@2x.jpg");
@@ -113,10 +112,7 @@
   height: 65px;
   border: none;
   border-radius: 50%;
-  background-color: $cyan;
-  background-image: url("../../img/play-icon.svg");
-  background-position: 54% 50%;
-  background-repeat: no-repeat;
+  background: $cyan url("../../img/play-icon.svg") 54% 50% no-repeat;
   cursor: pointer;
 
   &:hover {
