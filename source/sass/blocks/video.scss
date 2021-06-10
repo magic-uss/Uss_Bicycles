@@ -1,29 +1,32 @@
 .video {
   min-height: 896px;
+  padding-bottom: 190px;
 
   @media (max-width: $tablet) {
     min-height: 509px;
+    padding-bottom: 96px;
   }
 
   @media (max-width: $mobile) {
     min-height: 444px;
+    padding-bottom: 60px;
   }
 }
 
 .video__inner {
   position: relative;
   min-height: 706px;
-  padding-top: 121px;
+  padding: 121px 0 449px;
   background-color: $dark;
 
   @media (max-width: $tablet) {
     min-height: 413px;
-    padding-top: 70px;
+    padding: 70px 0 223px;
   }
 
   @media (max-width: $mobile) {
     min-height: 384px;
-    padding-top: 84px;
+    padding: 84px 0 133px;
   }
 }
 
@@ -47,7 +50,7 @@
 
 .video__inner p {
   max-width: 350px;
-  margin: 0 auto 56px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
@@ -58,11 +61,9 @@
 
   @media (max-width: $tablet) {
     max-width: 420px;
-    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 53px;
     padding: 0 10px;
   }
 }
@@ -112,7 +113,7 @@
   height: 65px;
   border: none;
   border-radius: 50%;
-  background: $cyan url("../../img/play-icon.svg") 54% 50% no-repeat;
+  background: $cyan url("../img/play-icon.svg") 54% 50% no-repeat;
   cursor: pointer;
 
   &:hover {

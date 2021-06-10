@@ -1,7 +1,11 @@
 .page-header {
   width: 100%;
   min-height: 825px;
-  background: linear-gradient($almost-black 0%, $almost-black 35%, $very-dark-grey 95%);
+  background: $almost-black url("../img/main-bg-desktop.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-bg-desktop@2x.jpg");
+  }
 
   @media (max-width: $tablet) {
     min-height: 683px;
@@ -9,7 +13,7 @@
   }
 
   @media (max-width: $mobile) {
-    min-height: 750px;
+    min-height: 725px;
   }
 }
 
@@ -18,15 +22,6 @@
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
-  background: url("../img/main-bg-desktop.jpg") 50% 0 / cover no-repeat;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-bg-desktop@2x.jpg");
-  }
-
-  @media (max-width: $tablet) {
-    background: none;
-  }
 }
 
 .page-header__nav {
@@ -136,8 +131,9 @@
   }
 
   @media (max-width: $mobile) {
-    max-width: 320px;
-    padding: 65px 16px;
+    width: 100%;
+    max-width: 100%;
+    padding: 65px 16px 40px;
   }
 }
 
@@ -197,6 +193,7 @@
 
 .page-header__form button {
   width: 100%;
+  margin-bottom: 25px;
   padding: 16px 29px 14px;
   font-weight: 600;
   font-size: 15px;

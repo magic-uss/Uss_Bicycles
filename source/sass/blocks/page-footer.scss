@@ -60,14 +60,15 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
   width: 957px;
   min-height: 159px;
-  padding: 39px 172px 0 155px;
+  padding: 39px 172px 20px 155px;
 
   @media (max-width: $tablet) {
     width: 698px;
     min-height: 98px;
-    padding: 22px 80px 0 70px;
+    padding: 22px 80px 20px 70px;
   }
 
   @media (max-width: $mobile) {
@@ -75,12 +76,13 @@
     justify-content: flex-start;
     width: 320px;
     min-height: 151px;
-    padding: 30px 20px 0 13px;
+    padding: 30px 20px 10px 13px;
   }
 }
 
 .page-footer__contacts-link {
   display: flex;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
